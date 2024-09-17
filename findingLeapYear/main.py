@@ -1,7 +1,7 @@
 on_off = True
 
 while on_off:
-    year = float(input("What's the year?\n>"))
+    year = float(input("What's the year?\n> "))
     if year % 100 != 0 and year % 4 == 0:
         print("It's a leap year.")
     elif year % 100 == 0 and year % 400 == 0:
@@ -9,7 +9,7 @@ while on_off:
     else:
         print("It's not a leap year.")
 
-    op = input("Do you want to continue, write either 'y' or 'n'\n>")
+    op = input("Do you want to continue, write either 'y' to continue or 'n' to stop.\n> ")
     if op == "y":
         on_off = True
     elif op == "n":
